@@ -1,54 +1,40 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Database\Eloquent\Model;
+
+use Faker\Generator as Faker;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-use Faker\Generator as Faker;
 
 class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
     public function run(Faker $faker)
     {
-        $admin = \App\UserRole::where('name', 'administrator')->first();
+        $user = \App\UserRole::where('name', 'administrator')->first();
         \App\User::create([
-            'name'                  => 'ADM: '.$faker->name,
-            'username'              => 'admin',
-            'email'                 => 'admin@user.com',
-            'password'              => Hash::make('_123456adm!'),
-            'role'                  => $admin->role_id,
-            'establishment'         => 1,
-            'status'                => 1,
-            'verified'              => 1
+            'name' => 'USER: '.$faker->name,
+            'username' => 'user',
+            'email' => 'user@moat.com',
+            'password' => Hash::make('123456'),
+            'role' => $user->role_id,
+            'establishment' => 1,
+            'status' => 1,
+            'verified' => 1,
         ]);
 
-        $comercial = \App\UserRole::where('name', 'comercial')->first();
+        $admin = \App\UserRole::where('name', 'comercial')->first();
         \App\User::create([
-            'name'                  => 'Com: '.$faker->name,
-            'username'              => 'comercial',
-            'email'                 => 'comercial@user.com',
-            'password'              => Hash::make('123456'),
-            'role'                  => $comercial->role_id,
-            'establishment'         => 1,
-            'status'                => 1,
-            'verified'              => 1
-        ]);
-
-        $player = \App\UserRole::where('name', 'player')->first();
-        \App\User::create([
-            'name'                  => $faker->name,
-            'username'              => 'corretor',
-            'email'                 => 'corretor@user.com',
-            'password'              => Hash::make('123456'),
-            'role'                  => $player->role_id,
-            'establishment'         => 1,
-            'status'                => 1,
-            'verified'              => 1
+            'name' => 'ADMIN: '.$faker->name,
+            'username' => 'admin',
+            'email' => 'admin@moat.com',
+            'password' => Hash::make('123456'),
+            'role' => $admin->role_id,
+            'establishment' => 1,
+            'status' => 1,
+            'verified' => 1,
         ]);
     }
 }

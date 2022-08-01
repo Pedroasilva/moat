@@ -1,8 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Hash;
-
 use Faker\Generator as Faker;
+use Illuminate\Support\Facades\Hash;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,15 +14,14 @@ use Faker\Generator as Faker;
 |
 */
 
-
 $factory->define(App\User::class, function (Faker $faker) {
-	$role = App\UserRole::where('name', 'participant')->first();
+    $role = App\UserRole::where('name', 'user')->first();
 
     return [
-        'name'     		=> $faker->name,
-        'username'    	=> $faker->unique()->userName,
-        'email'    		=> $faker->unique()->email,
-        'password' 		=> Hash::make('123456'),
-        'role'			=> $role->role_id
+        'name' => $faker->name,
+        'username' => $faker->unique()->userName,
+        'email' => $faker->unique()->email,
+        'password' => Hash::make('123456'),
+        'role' => $role->role_id,
     ];
 });

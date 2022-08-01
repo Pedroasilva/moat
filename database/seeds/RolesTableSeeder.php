@@ -1,39 +1,29 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Database\Eloquent\Model;
+
 use Illuminate\Database\Seeder;
 
 class RolesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
     public function run()
     {
-        $adm = \App\UserRole::where('name', 'administrator')->first();
-        if (!$adm) {
+        $admin = \App\UserRole::where('name', 'admin')->first();
+        if (!$admin) {
             \App\UserRole::create([
-                'name' => 'administrator',
-                'label' => 'Administrador'
+                'name' => 'admin',
+                'label' => 'Admin',
             ]);
         }
 
-        $com = \App\UserRole::where('name', 'comercial')->first();
-        if (!$com) {
+        $user = \App\UserRole::where('name', 'user')->first();
+        if (!$user) {
             \App\UserRole::create([
-                'name' => 'comercial',
-                'label' => 'Comercial'
-            ]);
-        }
-
-        $cli = \App\UserRole::where('name', 'player')->first();
-        if (!$cli) {
-            \App\UserRole::create([
-                'name' => 'player',
-                'label' => 'Corretor'
+                'name' => 'user',
+                'label' => 'User',
             ]);
         }
     }
