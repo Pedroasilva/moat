@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Form Editor</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- Favicons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.0.0/trix.js"></script>
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		//= includes/loader.html
+		//= includes/sidebar.html
+		//= includes/header.html
+		<main class="content">
+			<div class="container-fluid">
+				<div class="content-header">
+					<h1>Form editor</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="dashboard-1.html">Dashboard</a></li>
+							<li class="breadcrumb-item active">Form editor</li>
+						</ol>
+					</nav>
+				</div>
+
+				<form class="box">
+					<div class="box-header">
+						<h3>Trix editor</h3>
+					</div>
+					<div class="box-body">
+						<input id="trix-editor" type="hidden" value="Your content here...">
+						<trix-editor input="trix-editor"></trix-editor>
+					</div>
+				</form>
+
+				<form class="box">
+					<div class="box-header">
+						<h3>Medium Editor</h3>
+					</div>
+					<div class="box-body">
+						<p>This is a clone of medium.com inline editor toolbar.</p>
+						<textarea class="medium-editor"><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</g>.&nbsp;</h2><p>Doloremque fugit expedita maiores eligendi assumenda perspiciatis nisi! Illum eos, cum, sequi at voluptatem, ex odit commodi atque error magnam vitae rerum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Doloremque fugit expedita maiores eligendi </b>assumenda perspiciatis nisi! Illum eos, cum, sequi at voluptatem, ex odit commodi atque error magnam vitae rerum.<br></p><blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste adipisci maxime, perspiciatis iure recusandae iusto eum laborum cum qui. Eius soluta deleniti est neque, quae aliquid cumque reprehenderit quos labore.</blockquote></textarea>
+					</div>
+				</form>
+
+				<form class="box">
+					<div class="box-header">
+						<h3>CKEditor 4</h3>
+					</div>
+					<div class="box-body">
+						<textarea id="ckeditor4"><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</g>.&nbsp;</h2><p>Doloremque fugit expedita maiores eligendi assumenda perspiciatis nisi! Illum eos, cum, sequi at voluptatem, ex odit commodi atque error magnam vitae rerum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Doloremque fugit expedita maiores eligendi </b>assumenda perspiciatis nisi! Illum eos, cum, sequi at voluptatem, ex odit commodi atque error magnam vitae rerum.<br></p><blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste adipisci maxime, perspiciatis iure recusandae iusto eum laborum cum qui. Eius soluta deleniti est neque, quae aliquid cumque reprehenderit quos labore.</blockquote></textarea>
+					</div>
+				</form>
+				
+			</div>
+		</main>
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

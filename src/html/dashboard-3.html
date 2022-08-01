@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Responsive Scalable Admin Template</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper theme-inverse">
+		//= includes/loader.html
+		//= includes/sidebar-inverse.html
+		//= includes/header.html
+		<main class="content">
+			<div class="container-fluid">
+				<div class="content-header content-header-scene">
+					<h1>Oxios Dashboard <small>Last logged in: 03:00 21, July</small></h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">Dashboard</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-lg-3">
+						<div class="info-box">
+							<div class="info-box-content">
+								<div class="info-box-text">
+									<span class="info-box-number">
+										7891 <small class="text-sm text-success"><i class="fas fa-chevron-up"></i>+12</small>
+									</span>
+									New users
+								</div>
+								<div class="info-box-icon bg-primary">
+									<i class="i-user"></i>
+								</div>
+							</div>
+							<canvas class="info-box-chart" height="70" id="chartJs1"></canvas>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="info-box">
+							<div class="info-box-content">
+								<div class="info-box-text">
+									<span class="info-box-number">
+										3510 <small class="text-sm text-danger"><i class="fas fa-chevron-down"></i>-3</small>
+									</span>
+									Sales
+								</div>
+								<div class="info-box-icon bg-success">
+									<i class="i-shopping-cart"></i>
+								</div>
+							</div>
+							<canvas class="info-box-chart" height="70" id="chartJs2"></canvas>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="info-box">
+							<div class="info-box-content">
+								<div class="info-box-text">
+									<span class="info-box-number">
+										19 <small class="text-sm text-secondary"><i class="fas fa-minus"></i></small>
+									</span>
+									New comments
+								</div>
+								<div class="info-box-icon bg-warning">
+									<i class="i-chat-bubble"></i>
+								</div>
+							</div>
+							<canvas class="info-box-chart" height="70" id="chartJs3"></canvas>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="info-box">
+							<div class="info-box-content">
+								<div class="info-box-text">
+									<span class="info-box-number">
+										19 <small class="text-sm text-success"><i class="fas fa-chevron-up"></i>+17%</small>
+									</span>
+									Bounce rate
+								</div>
+								<div class="info-box-icon bg-danger">
+									<i class="i-circle-chart"></i>
+								</div>
+							</div>
+							<canvas class="info-box-chart" height="70" id="chartJs4"></canvas>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3 >Orders</h3>
+						<div class="box-actions">
+							<a href="#" class="box-actions-item">Link</a>
+							<button class="box-actions-item"><i class="fas fa-minus"></i></button>
+							<button class="box-actions-item"><i class="fas fa-times"></i></button>
+						</div>
+					</div>
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr>
+									<th>ID</th>
+									<th>Avatar</th>
+									<th>Full name</th>
+									<th>Country</th>
+									<th>Date</th>
+									<th>Payment</th>
+									<th>Total</th>
+									<th>Status</th>
+									<th>Progress</th>
+									<th></th>
+								</tr>
+								<tr>
+									<td>7719</td>
+									<td>
+										<div class="avatar avatar-xs">
+											<img src="images/avatar-1.jpg" alt="">
+										</div>
+									</td>
+									<td>John Doe</td>
+									<td><i class="flags flags-ru"></i></td>
+									<td>10.10.2018</td>
+									<td><i class="payments payments-visa"></i></td>
+									<td>5471.00 $</td>
+									<td><span class="status-icon bg-warning"></span> Waiting</td>
+									<td>
+										<div class="d-flex justify-content-between mb-5">
+											<span class="text-sm"><b>25%</b></span>
+											<span class="text-sm text-secondary">Jun 11, 2018 - Jul 11, 2018</span>
+										</div>
+										<div class="progress progress-sm">
+											<div class="progress-bar bg-warning" style="width: 25%"></div>
+										</div>
+									</td>
+									<td>
+										<a href="#" class="icon text-black-25"><i class="fas fa-ellipsis-v"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>7720</td>
+									<td>
+										<div class="avatar avatar-xs">
+											<img src="images/avatar-3.jpg" alt="">
+										</div>
+									</td>
+									<td>Alex White</td>
+									<td><i class="flags flags-bl"></i></td>
+									<td>15.10.2018</td>
+									<td><i class="payments payments-mastercard"></i></td>
+									<td>3933.00 $</td>
+									<td><span class="status-icon bg-danger"></span> Failed</td>
+									<td>
+										<div class="d-flex justify-content-between mb-5">
+											<span class="text-sm"><b>10%</b></span>
+											<span class="text-sm text-secondary">Jun 11, 2018 - Jul 11, 2018</span>
+										</div>
+										<div class="progress progress-sm">
+											<div class="progress-bar bg-danger" style="width: 10%"></div>
+										</div>
+									</td>
+									<td>
+										<a href="#" class="icon text-black-25"><i class="fas fa-ellipsis-v"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>7721</td>
+									<td>
+										<div class="avatar avatar-xs">
+											<img src="images/avatar-4.jpg" alt="">
+										</div>
+									</td>
+									<td>Jessica Evans</td>
+									<td><i class="flags flags-de"></i></td>
+									<td>16.10.2018</td>
+									<td><i class="payments payments-paypal"></i></td>
+									<td>973.00 $</td>
+									<td><span class="status-icon bg-success"></span> Success</td>
+									<td>
+										<div class="d-flex justify-content-between mb-5">
+											<span class="text-sm"><b>100%</b></span>
+											<span class="text-sm text-secondary">Jun 11, 2018 - Jul 11, 2018</span>
+										</div>
+										<div class="progress progress-sm">
+											<div class="progress-bar bg-success" style="width: 100%"></div>
+										</div>
+									</td>
+									<td>
+										<a href="#" class="icon text-black-25"><i class="fas fa-ellipsis-v"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>7722</td>
+									<td>
+										<div class="avatar avatar-xs">
+											<img src="images/avatar-5.jpg" alt="">
+										</div>
+									</td>
+									<td>Lily Wilson</td>
+									<td><i class="flags flags-us"></i></td>
+									<td>16.10.2018</td>
+									<td><i class="payments payments-bitcoin"></i></td>
+									<td>312.00 $</td>
+									<td><span class="status-icon bg-success"></span> Success</td>
+									<td>
+										<div class="d-flex justify-content-between mb-5">
+											<span class="text-sm"><b>100%</b></span>
+											<span class="text-sm text-secondary">Jun 11, 2018 - Jul 11, 2018</span>
+										</div>
+										<div class="progress progress-sm">
+											<div class="progress-bar bg-success" style="width: 100%"></div>
+										</div>
+									</td>
+									<td>
+										<a href="#" class="icon text-black-25"><i class="fas fa-ellipsis-v"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>7722</td>
+									<td>
+										<div class="avatar avatar-xs">
+											<img src="images/avatar-6.jpg" alt="">
+										</div>
+									</td>
+									<td>Jacob Brown</td>
+									<td><i class="flags flags-gb"></i></td>
+									<td>17.10.2018</td>
+									<td><i class="payments payments-visa"></i></td>
+									<td>4876.00 $</td>
+									<td><span class="status-icon bg-secondary"></span> Pending</td>
+									<td>
+										<div class="d-flex justify-content-between mb-5">
+											<span class="text-sm"><b>0%</b></span>
+											<span class="text-sm text-secondary">Jun 11, 2018 - Jul 11, 2018</span>
+										</div>
+										<div class="progress progress-sm">
+											<div class="progress-bar bg-success" style="width: 0%"></div>
+										</div>
+									</td>
+									<td>
+										<a href="#" class="icon text-black-25"><i class="fas fa-ellipsis-v"></i></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3>Weekly Recap Report</h3>
+					</div>
+					<div class="box-body">
+						<div class="row">
+							<div class="col-md-8">
+								<canvas class="chart" id="areaChartJs"></canvas>
+							</div>
+							<div class="col-md-4">
+								<h3>Goals</h3>
+								<div class="d-block mb-20">
+									<div class="d-flex justify-content-between">
+										<p class="mb-5">Complete Purchase</p>
+										<p class="mb-5 text-secondary"><b>47/50</b></p>
+									</div>
+									<div class="progress progress-lg" id="barChart1"></div>
+								</div>
+
+								<div class="d-block mb-20">
+									<div class="d-flex justify-content-between">
+										<p class="mb-5">Add Product to Favorite</p>
+										<p class="mb-5 text-secondary"><b>25/50</b></p>
+									</div>
+									<div class="progress progress-lg" id="barChart2"></div>
+								</div>
+
+								<div class="d-block mb-25">
+									<div class="d-flex justify-content-between">
+										<p class="mb-5">Add product to favorite</p>
+										<p class="mb-5 text-secondary"><b>12/50</b></p>
+									</div>
+									<div class="progress progress-lg" id="barChart3"></div>
+								</div>
+
+								<div class="row text-center">
+									<div class="col-4">
+										<div class="chart-circle" id="circleChart1"></div>
+										<p>Mail orders</p>
+									</div>
+									<div class="col-4">
+										<div id="circleChart2"></div>
+										<p>Online</p>
+									</div>
+									<div class="col-4">
+										<div id="circleChart3"></div>
+										<p>In store</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h2 class="content-title">Work</h2>
+
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="box">
+							<div class="box-header">
+								<h3>Chat</h3>
+							</div>
+							<div class="chat-content">
+								<div class="chat-messages">
+
+									<div class="message message-self">
+										<div class="message-content">
+											<div class="message-bubble">
+												<p>Hello, Alex!</p>
+											</div>
+											<small class="text-secondary text-sm">Today, 10:35</small>
+										</div>
+										<div class="message-actions">
+											<button><i class="far fa-trash-alt"></i></button>
+										</div>
+									</div>
+									<div class="message message-self">
+										<div class="message-content">
+											<div class="message-bubble">
+												<p>The project finally complete! Do you go to our team meeting? We have great news!</p>
+											</div>
+											<small class="text-secondary text-sm">Today, 10:35</small>
+										</div>
+										<div class="message-actions">
+											<button><i class="far fa-trash-alt"></i></button>
+										</div>
+									</div>
+									<div class="message">
+										<div class="avatar avatar-sm">
+											<img src="images/avatar-3.jpg" alt="">
+										</div>
+										<div class="message-content">
+											<div class="message-bubble">
+												<p>Yes, I'll come!</p>
+											</div>
+											<small class="text-secondary text-sm">Today, 10:36</small>
+										</div>
+										<div class="message-actions">
+											<button><i class="far fa-trash-alt"></i></button>
+											<button><i class="far fa-flag"></i></button>
+										</div>
+									</div>
+								</div>
+								<div class="chat-footer">
+									<div class="input-group">
+										<input id="inputGroupEmailButton2" type="text" class="form-control" placeholder="This is input with button">
+										<button class="btn btn-primary">Send</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="box">
+							<div class="box-header">
+								<h3>Browser Usage</h3>
+							</div>
+							<div class="box-body">
+								<canvas id="pieChartJs" class="chart" height="200"></canvas>
+								<ul class="list-bordered unstyled">
+									<li class="d-flex justify-content-between">Germany <span class="badge badge-primary badge-pill pull-right">+1236</span></li>
+									<li class="d-flex justify-content-between">USA <span class="badge badge-primary badge-pill pull-right">+1031</span></li>
+									<li class="d-flex justify-content-between">Australia <span class="badge badge-primary badge-pill pull-right">+833</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="box">
+							<div class="box-header">
+								<h3>Event columns</h3>
+								<div class="box-actions">
+									<a href="#" class="box-actions-item">Link</a>
+									<button class="box-actions-item"><i class="fas fa-minus"></i></button>
+									<button class="box-actions-item"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+							<div class="box-body">
+								<div class="event-column event-column-success">
+									<div class="event-content">
+										<small class="text-secondary"><i class="far fa-envelope"></i> From example@gmail.com</small>
+										<p><a href="#">Alex White</a> sent you an email.</p>
+									</div>
+									<small class="text-secondary pull-right">1 hr.</small>
+								</div>
+								<div class="event-column event-column-success">
+									<div class="avatar avatar-xs">
+										<img src="images/avatar-2.jpg" alt="">
+									</div>
+									<div class="event-content">
+										<small class="text-secondary"><i class="fas fa-code-branch"></i> awesome-branch</small>
+										<p><a href="#">Sam Lee</a> new pull request.</p>
+									</div>
+									<small class="text-secondary pull-right">43 min.</small>
+								</div>
+								<div class="event-column event-column-primary">
+									<div class="event-content">
+										<small class="text-secondary"><i class="fas fa-thumbtack"></i> New task</small>
+										<p><b>To <a href="#">John Doe</a>: new API methods.</b></p>
+										<p class="text-secondary text-sm">Implement new API methods for mobile app.</p>
+									</div>
+									<small class="text-secondary pull-right">7 min.</small>
+								</div>
+								<div class="event-column event-column-secondary">
+									<div class="event-content">
+										<small class="text-secondary"><i class="far fa-bell"></i> Notification</small>
+										<p><a href="#">Alex White</a> joined to project</p>
+									</div>
+									<small class="text-secondary pull-right">now</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+		//= includes/footer.html
+	</div>
+
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

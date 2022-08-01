@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Form basic</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		//= includes/loader.html
+		//= includes/sidebar.html
+		//= includes/header.html
+		<main class="content">
+			<div class="container-fluid">
+				<div class="content-header">
+					<h1>Form Basic</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="dashboard-1.html">Dashboard</a></li>
+							<li class="breadcrumb-item active">Form Basic</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<form class="box">
+							<div class="box-header">
+								<h3 >Example form</h3>
+								<div class="box-actions">
+									<a href="#" class="box-actions-item">Link</a>
+									<button class="box-actions-item"><i class="fas fa-minus"></i></button>
+									<button class="box-actions-item"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="exampleInput">Example input</label>
+									<input id="exampleInput" type="text" class="form-control" placeholder="This is example input">
+									<small class="text-sm text-secondary">Help block.</small>
+								</div>
+								<div class="form-group">
+									<label for="readonlyInput">Readonly input</label>
+									<input id="readonlyInput" type="text" readonly class="form-control" placeholder="This is readonly input">
+								</div>
+								<div class="form-group">
+									<label for="disabledInput">Disabled input</label>
+									<input id="disabledInput" type="text" disabled class="form-control" placeholder="This is disabled input">
+								</div>
+								<div class="form-group">
+									<label for="plaintextInput">Plaintext input</label>
+									<input id="plaintextInput" type="text" readonly value="Plaintext input" class="form-control-plaintext" placeholder="This is plaintex input">
+								</div>
+								<div class="form-group">
+									<label for="exampleSelect">Example select</label>
+									<select id="exampleSelect" class="form-control">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="disabledSelect">Disabled select</label>
+									<select id="disabledSelect" disabled class="form-control">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="multipleSelect">Example multiple select</label>
+									<select id="multipleSelect" multiple class="form-control">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="exampleTextarea">Example textarea</label>
+									<textarea id="exampleTextarea" class="form-control" placeholder="This is example textarea"></textarea>
+								</div>
+								<div class="form-group">
+									<label for="fileInput">Example file input</label>
+									<input id="fileInput" type="file" class="form-control">
+								</div>
+								<div class="form-group">
+									<label class="form-checkbox">
+										<input type="checkbox">
+										<span class="form-label">Default checkbox</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-radio">
+										<input name="radio" type="radio">
+										<span class="form-label">Default radio button 1</span>
+									</label>
+									<label class="form-radio">
+										<input name="radio" type="radio">
+										<span class="form-label">Default radio button 2</span>
+									</label>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="btn btn-link">Back</a>
+								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+
+						<form class="box">
+							<div class="box-header">
+								<h3 >Custom controls</h3>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label class="form-checkbox-custom">
+										<input type="checkbox">
+										<span class="form-label">Custom checkbox 1</span>
+									</label>
+									<label class="form-checkbox-custom">
+										<input checked type="checkbox">
+										<span class="form-label">Custom checkbox 2</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-checkbox-custom">
+										<input disabled type="checkbox">
+										<span class="form-label">Disabled checkbox</span>
+									</label>
+									<label class="form-checkbox-custom">
+										<input disabled checked type="checkbox">
+										<span class="form-label">Disabled checkbox checked</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-radio-custom">
+										<input name="custom_radio" value="1" type="radio">
+										<span class="form-label">Custom radio button 1</span>
+									</label>
+									<label class="form-radio-custom">
+										<input checked name="custom_radio" value="2" type="radio">
+										<span class="form-label">Custom radio button 2</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-radio-custom">
+										<input disabled name="disabled_custom_radio" value="1" type="radio">
+										<span class="form-label">Custom radio button 1</span>
+									</label>
+									<label class="form-radio-custom">
+										<input disabled checked name="disabled_custom_radio" value="2" type="radio">
+										<span class="form-label">Custom radio button 2</span>
+									</label>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="btn btn-link">Back</a>
+								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+
+						<form class="box">
+							<div class="box-header">
+								<h3>Input group</h3>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<div class="form-group">
+										<label for="inputGroupEmail">Input group</label>
+										<div class="input-group">
+											<div class="input-group-icon">Email</div>
+											<input id="inputGroupEmail" type="text" class="form-control" placeholder="This is input with text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailLg">Input group large</label>
+										<div class="input-group input-group-lg">
+											<div class="input-group-icon">Large</div>
+											<input id="inputGroupEmailLg" type="text" class="form-control" placeholder="This is input with text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailSm">Input group small</label>
+										<div class="input-group input-group-sm">
+											<div class="input-group-icon">Small</div>
+											<input id="inputGroupEmailSm" type="text" class="form-control" placeholder="This is input with text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailIcon1">Input group with icon</label>
+										<div class="input-group">
+											<div class="input-group-icon"><i class="fab fa-twitter"></i></div>
+											<input id="inputGroupEmailIcon1" type="text" class="form-control" placeholder="This is input with icon">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailIcon2">Input group with icon</label>
+										<div class="input-group">
+											<input id="inputGroupEmailIcon2" type="text" class="form-control" placeholder="This is input with icon">
+											<div class="input-group-icon"><i class="fab fa-twitter"></i></div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailButton1">Input group with button</label>
+										<div class="input-group">
+											<button class="btn btn-primary">Send</button>
+											<input id="inputGroupEmailButton1" type="text" class="form-control" placeholder="This is input with button">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailButton2">Input group with button</label>
+										<div class="input-group">
+											<input id="inputGroupEmailButton2" type="text" class="form-control" placeholder="This is input with button">
+											<button class="btn btn-primary">Send</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="btn btn-link">Back</a>
+								<button class="btn btn-priamry pull-right">Submit</button>
+							</div>
+						</form>
+						<form class="box">
+							<div class="box-header">
+								<h3>Mask</h3>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="htmlPhoneMask">Phone</label>
+									<input id="htmlPhoneMask" type="tel" data-mask="+{7}(000)000-00-00" class="form-control" placeholder="+7(900)000-00-00">
+								</div>
+								<div class="form-group">
+									<label for="htmlCustomMask">Custom string</label>
+									<input id="htmlCustomMask" type="text" data-mask="{#}000[aaa]/NIC-`*[**]" class="form-control" placeholder="#123/NIC-456">
+								</div>
+								<p>Define <code>data-mask={your-mask-pattern}</code> attribute to activate mask.</p>
+								<hr>
+								<div class="form-group">
+									<label for="htmlDateMask">Date</label>
+									<input id="htmlDateMask" type="text" data-mask-date="YYYY-MM-DD" class="form-control" placeholder="YYYY/MM/DD">
+								</div>
+								<div class="form-group">
+									<label for="htmlTimeMask">Time</label>
+									<input id="htmlTimeMask" type="text" data-mask-date="HH:mm:ss" class="form-control" placeholder="YYYY/HH:mm:ss">
+								</div>
+								<p>Define <code>data-mask-date={date-pattern}</code> attribute to activate date mask.</p>
+								<p>Compatible with moment.js. You can change settings in <code>dataMaskDate()</code> method in <code>DomActionsHandler.js</code> class</p>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6">
+						<form class="box">
+							<div class="box-header">
+								<h3 >Sizing</h3>
+								<div class="box-actions">
+									<a href="#" class="box-actions-item">Link</a>
+									<button class="box-actions-item"><i class="fas fa-minus"></i></button>
+									<button class="box-actions-item"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="largeInput" class="form-label-lg">Large input</label>
+									<input id="largeInput" type="text" class="form-control form-control-lg" placeholder="Large input">
+								</div>
+								<div class="form-group">
+									<label for="defaultInput" class="form-label">Default input</label>
+									<input id="defaultInput" type="text" class="form-control form-control" placeholder="Default input">
+								</div>
+								<div class="form-group">
+									<label for="smallInput" class="form-label-sm">Small input</label>
+									<input id="smallInput" type="text" class="form-control form-control-sm" placeholder="Small input">
+								</div>
+								<div class="form-group">
+									<select class="form-control form-control-lg">
+										<option>Large select</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+									<select class="form-control">
+										<option>Default</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+									<select class="form-control form-control-sm">
+										<option>Small select</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="btn btn-link">Back</a>
+								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+						
+						<form class="box">
+							<div class="box-header">
+								<h3 >Horizontal form</h3>
+								<div class="box-actions">
+									<a href="#" class="box-actions-item">Link</a>
+									<button class="box-actions-item"><i class="fas fa-minus"></i></button>
+									<button class="box-actions-item"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+							<div class="box-body">
+								<div class="form-group row">
+									<label for="horizontalName" class="form-label col-3">Name</label>
+									<div class="col-9">
+										<input id="horizontalName" type="text" class="form-control" placeholder="Enter your name">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="horizontalEmail" class="form-label col-3">Email</label>
+									<div class="col-9">
+										<input id="horizontalEmail" type="email" class="form-control" placeholder="Enter your email">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="horizontalPassword" class="form-label col-3">Password</label>
+									<div class="col-9">
+										<input id="horizontalPassword" type="password" class="form-control" placeholder="Enter your password">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="form-label col-3">Gender</div>
+									<div class="col-9">
+										<label class="form-radio">
+											<input name="gender" value="1" type="radio">
+											<span class="form-checkbox-text">Male</span>
+										</label>
+										<label class="form-radio">
+											<input name="gender" value="2" type="radio">
+											<span class="form-checkbox-text">Female</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="form-label col-3">Newsletter</div>
+									<div class="col-9">
+										<label class="form-checkbox">
+											<input type="checkbox">
+											<span class="form-checkbox-text">Subscribe to newsletter</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="btn btn-link">Back</a>
+								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+						<form class="box">
+							<div class="box-header">
+								<h3>Column sizing</h3>
+							</div>
+							<div class="box-body">
+								<div class="row">
+									<div class="col-sm-4 form-group">
+										<label for="sizingFirstName">First name</label>
+										<input id="sizingFirstName" type="text" class="form-control" placeholder="First name">
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="sizingLastName">Last name</label>
+										<input id="sizingLastName" type="text" class="form-control" placeholder="Last name">
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="sizingEmail">Email</label>
+										<input id="sizingEmail" type="email" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 form-group">
+										<label for="sizingAddress">Address</label>
+										<input id="sizingAddress" type="text" class="form-control" placeholder="Address">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<label for="sizingCity">City</label>
+										<input id="sizingCity" type="text" class="form-control" placeholder="City">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="sizingState">State</label>
+										<input id="sizingState" type="text" class="form-control" placeholder="State">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="sizingZip">Zip</label>
+										<input id="sizingZip" type="text" class="form-control" placeholder="Zip">
+									</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+
+						<form class="box needs-validation" novalidate>
+							<div class="box-header">
+								<h3>JS validation</h3>
+							</div>
+							<div class="box-body">
+								<div class="row">
+									<div class="col-sm-4 form-group">
+										<label for="validationFirstName">First name <sup class="text-danger">*</sup></label>
+										<input id="validationFirstName" type="text" class="form-control" placeholder="First name" required>
+										<span class="valid-feedback">Fine!</span>
+										<span class="invalid-feedback">Field is required.</span>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="validationLastName">Last name <sup class="text-danger">*</sup></label>
+										<input id="validationLastName" type="text" class="form-control" placeholder="Last name" required>
+										<span class="valid-feedback">Fine!</span>
+										<span class="invalid-feedback">Field is required.</span>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="validationEmail">Email <sup class="text-danger">*</sup></label>
+										<input id="validationEmail" type="email" class="form-control" placeholder="Email" required>
+										<span class="valid-feedback">Fine!</span>
+										<span class="invalid-feedback">Field is required and must be email.</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 form-group">
+										<label for="validationAddress">Address</label>
+										<input id="validationAddress" type="text" class="form-control" placeholder="Address">
+										<span class="valid-feedback">Fine!</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<label for="validationCity">City</label>
+										<input id="validationCity" type="text" class="form-control" placeholder="City">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="validationState">State</label>
+										<input id="validationState" type="text" class="form-control" placeholder="State">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="validationZip">Zip</label>
+										<input id="validationZip" type="text" class="form-control" placeholder="Zip">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-label">Gender <sup class="text-danger">*</sup></div>
+									<label class="form-radio-custom">
+										<input type="radio" name="gender" value="m" required>
+										<span class="form-label">Male</span>
+									</label>
+									<label class="form-radio-custom">
+										<input type="radio" name="gender" value="w" required>
+										<span class="form-label">Female</span>
+										<span class="invalid-feedback">Сhoose your gender.</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-checkbox-custom">
+										<input type="checkbox" required>
+										<span class="form-label">I agree to the processing of personal data <sup class="text-danger">*</sup></span>
+									</label>
+								</div>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+
+						<form class="box">
+							<div class="box-header">
+								<h3>HTML5 validation</h3>
+							</div>
+							<div class="box-body">
+								<div class="row">
+									<div class="col-sm-4 form-group">
+										<label for="htmlFirstName">First name <sup class="text-danger">*</sup></label>
+										<input id="htmlFirstName" type="text" class="form-control" placeholder="First name" required>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="htmlLastName">Last name <sup class="text-danger">*</sup></label>
+										<input id="htmlLastName" type="text" class="form-control" placeholder="Last name" required>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="htmlEmail">Email <sup class="text-danger">*</sup></label>
+										<input id="htmlEmail" type="email" class="form-control" placeholder="Email" required>
+									</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

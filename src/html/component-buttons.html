@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Buttons</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		//= includes/loader.html
+		//= includes/sidebar.html
+		//= includes/header.html
+		<main class="content">
+			<div class="container-fluid">
+				<div class="content-header">
+					<h1>Buttons</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="dashboard-1.html">Dashboard</a></li>
+							<li class="breadcrumb-item active">Buttons</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3>Default buttons</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>.btn-{style-name}</code> modifier to change style.</p>
+						<button class="btn">Default</button>
+						<button class="btn btn-primary">Primary</button>
+						<button class="btn btn-secondary">Secondary</button>
+						<button class="btn btn-success">Success</button>
+						<button class="btn btn-warning">Warning</button>
+						<button class="btn btn-danger">Danger</button>
+						<button class="btn btn-info">Info</button>
+						<button class="btn btn-light">Light</button>
+						<button class="btn btn-dark">Dark</button>
+						<button class="btn btn-link">Link</button>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-header">
+						<h3>Disabled buttons</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>disabled</code> attribute or <code>.disabled</code> modifier to change style.</p>
+						<button disabled class="btn">Default</button>
+						<button disabled class="btn btn-primary">Primary</button>
+						<button disabled class="btn btn-secondary">Secondary</button>
+						<button disabled class="btn btn-success">Success</button>
+						<button disabled class="btn btn-warning">Warning</button>
+						<button disabled class="btn btn-danger">Danger</button>
+						<button disabled class="btn btn-info">Info</button>
+						<button disabled class="btn btn-light">Light</button>
+						<button disabled class="btn btn-dark">Dark</button>
+						<button disabled class="btn btn-link">Link</button>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3>Button group</h3>
+					</div>
+					<div class="box-body">
+						<p>Wrap your buttons into <code>.btn-group</code> element.</p>
+						<div class="btn-group mb-10">
+							<button class="btn">Default</button>
+							<button class="btn btn-primary">Primary</button>
+							<button class="btn btn-secondary">Secondary</button>
+							<button class="btn btn-success">Success</button>
+							<button class="btn btn-warning">Warning</button>
+							<button class="btn btn-danger">Danger</button>
+						</div>
+						<div class="btn-toolbar">
+							<div class="btn-group mr-10">
+								<button class="btn btn-secondary">1</button>
+								<button class="btn btn-secondary">2</button>
+								<button class="btn btn-secondary">3</button>
+								<button class="btn btn-secondary">4</button>
+								<button class="btn btn-secondary">5</button>
+							</div>
+							<div class="btn-group">
+								<button class="btn btn-secondary">1</button>
+								<button class="btn btn-secondary">2</button>
+								<button class="btn btn-secondary">3</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3>Outline buttons</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>.btn-outline-{style-name}</code> modifier to change style.</p>
+						<button class="btn btn-outline-primary">Primary</button>
+						<button class="btn btn-outline-secondary">Secondary</button>
+						<button class="btn btn-outline-success">Success</button>
+						<button class="btn btn-outline-warning">Warning</button>
+						<button class="btn btn-outline-danger">Danger</button>
+						<button class="btn btn-outline-info">Info</button>
+						<button class="btn btn-outline-light">Light</button>
+						<button class="btn btn-outline-dark">Dark</button>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3>Rounded buttons</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>.btn-rounded</code> modifier to change style.</p>
+						<button class="btn btn-rounded">Default</button>
+						<button class="btn btn-rounded btn-primary">Primary</button>
+						<button class="btn btn-rounded btn-secondary">Secondary</button>
+						<button class="btn btn-rounded btn-success">Success</button>
+						<button class="btn btn-rounded btn-warning">Warning</button>
+						<button class="btn btn-rounded btn-danger">Danger</button>
+						<button class="btn btn-rounded btn-info">Info</button>
+						<button class="btn btn-rounded btn-light">Light</button>
+						<button class="btn btn-rounded btn-dark">Dark</button>
+						<button class="btn btn-rounded btn-link">Link</button>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-header">
+						<h3>Link buttons</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>.btn-link</code> modifier to change style.</p>
+						<button class="btn btn-link-primary">Primary</button>
+						<button class="btn btn-link-secondary">Secondary</button>
+						<button class="btn btn-link-success">Success</button>
+						<button class="btn btn-link-warning">Warning</button>
+						<button class="btn btn-link-danger">Danger</button>
+						<button class="btn btn-link-info">Info</button>
+						<button class="btn btn-link-light">Light</button>
+						<button class="btn btn-link-dark">Dark</button>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-header">
+						<h3>Button toolbar</h3>
+					</div>
+					<div class="box-body">
+						<p>Wrap buttons into <code>.btn-toolbar</code> blpck to stack and alignment buttons.</p>
+						<div class="btn-toolbar mb-10">
+							<button class="btn btn-primary">Primary</button>
+							<button class="btn btn-secondary">Secondary</button>
+							<button class="btn btn-success">Success</button>
+						</div>
+						<div class="btn-toolbar justify-content-center mb-10">
+							<button class="btn btn-primary">Primary</button>
+							<button class="btn btn-secondary">Secondary</button>
+							<button class="btn btn-success">Success</button>
+						</div>
+						<div class="btn-toolbar justify-content-end">
+							<button class="btn btn-primary">Primary</button>
+							<button class="btn btn-secondary">Secondary</button>
+							<button class="btn btn-success">Success</button>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-header">
+						<h3>Large size</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>.btn-lg</code> modifier to increase button size.</p>
+						<button class="btn btn-primary btn-lg">Large</button>
+						<button class="btn btn-secondary btn-lg">Large</button>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-header">
+						<h3>Small size</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>.btn-sm</code> modifier to reduce button size.</p>
+						<button class="btn btn-primary btn-sm">Small</button>
+						<button class="btn btn-secondary btn-sm">Small</button>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-header">
+						<h3>Button block</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>.btn-block</code> modifier to change button style.</p>
+						<button class="btn btn-primary btn-block">Block</button>
+						<button class="btn btn-secondary btn-block">Block</button>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-header">
+						<h3>Loading button</h3>
+					</div>
+					<div class="box-body">
+						<p>Put <code>&lt;i class="i-spinner loading">&lt;/i></code> element into button.</p>
+						<button class="btn btn-primary btn-block"><i class="i-spinner loading"></i></button>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-header">
+						<h3>Buttons with tooltip</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>data-tooltip="{text}"</code> attribute to any element to create tooltip.</p>
+						<p>Use <code>data-tooltip-placement</code> attribute to change tooltip placement. Available placements: <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>. Default placement - <code>top</code>. </p>
+						<button class="btn btn-primary" data-tooltip="Example tooltip" data-tooltip-placement="left">Left</button>
+						<button class="btn btn-primary" data-tooltip="Example tooltip">Top</button>
+						<button class="btn btn-primary" data-tooltip="Example tooltip" data-tooltip-placement="bottom">Bottom</button>
+						<button class="btn btn-primary" data-tooltip="Example tooltip" data-tooltip-placement="right">Right</button>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3>Buttons with popover</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>data-popover-placement="{placement}"</code> attribute to the element to create popover trigger. Available placements: <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>. Default placement - <code>top</code>.</p>
+						<p>Popover block should be a separate DOM element. You should place popover block after button (or some else DOM element with <code>data-popover-placement</code> attribute).</p>
+						<p>Add <code>data-popover-once</code> attribute to show popover once.</p>
+						<button class="btn btn-primary" data-popover-placement data-popover-once>Once</button>
+						<div class="popover">
+							<div class="popover-header">
+								<b>Popover</b>
+								<button class="btn btn-link" data-popover-dismiss><i class="fas fa-times"></i></button>
+							</div>
+							<div class="popover-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero reprehenderit nulla, maiores nihil non.
+							</div>
+						</div>
+						<button class="btn btn-primary" data-popover-placement="left">Left</button>
+						<div class="popover">
+							<div class="popover-header">
+								<b>Popover on left</b>
+								<button class="btn btn-link" data-popover-dismiss><i class="fas fa-times"></i></button>
+							</div>
+							<div class="popover-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero reprehenderit nulla, maiores nihil non.
+							</div>
+						</div>
+						<button class="btn btn-primary" data-popover-placement="top">Top</button>
+						<div class="popover">
+							<div class="popover-header">
+								<b>Popover on top</b>
+								<button class="btn btn-link" data-popover-dismiss><i class="fas fa-times"></i></button>
+							</div>
+							<div class="popover-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero reprehenderit nulla, maiores nihil non.
+							</div>
+						</div>
+						<button class="btn btn-primary" data-popover-placement="bottom">Bottom</button>
+						<div class="popover">
+							<div class="popover-header">
+								<b>Popover on bottom</b>
+								<button class="btn btn-link" data-popover-dismiss><i class="fas fa-times"></i></button>
+							</div>
+							<div class="popover-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero reprehenderit nulla, maiores nihil non.
+							</div>
+						</div>
+						<button class="btn btn-primary" data-popover-placement="right">Right</button>
+						<div class="popover">
+							<div class="popover-header">
+								<b>Popover on right</b>
+								<button class="btn btn-link" data-popover-dismiss><i class="fas fa-times"></i></button>
+							</div>
+							<div class="popover-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero reprehenderit nulla, maiores nihil non.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3>Pagination</h3>
+					</div>
+					<div class="box-body">
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link disabled" href="#" tabindex="-1">Previous</a></li>
+							<li class="page-item"><a class="page-link active" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-header">
+						<h3>Pagination large</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>.pagination-lg</code> to increase block size.</p>
+						<ul class="pagination pagination-lg">
+							<li class="page-item"><a class="page-link disabled" href="#" tabindex="-1">Previous</a></li>
+							<li class="page-item"><a class="page-link active" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box">
+					<div class="box-header">
+						<h3>Pagination small</h3>
+					</div>
+					<div class="box-body">
+						<p>Add <code>.pagination-sm</code> to reduce block size.</p>
+						<ul class="pagination pagination-sm">
+							<li class="page-item"><a class="page-link disabled" href="#" tabindex="-1">Previous</a></li>
+							<li class="page-item"><a class="page-link active" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+		//= includes/footer.html
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

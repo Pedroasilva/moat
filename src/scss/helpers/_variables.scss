@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Font settings
+$font-stack: 'Roboto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', 'Arial', sans-serif !default;
+	
+// Colors
+$black-color: #3b454e !default;
+$gray-color: #74818d !default;
+$light-gray-color: #f5f7f9 !default;
+$blue-color: #3884ff !default;
+$red-color: #ba1723 !default;
+$purple-color: #9f5ef5 !default;
+$orange-color: #f58424 !default;
+$green-color: #38c12f !default;
+$light-blue-color: #42b9ff !default;
+$belynda-color: #f86667 !default;
+$barbertrack-color: #edc03c !default;
+
+// Brand colors
+$primary-color: $barbertrack-color;
+
+// Block styles
+$block-box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.01);
+$block-border-radius: 6px;
+$block-border: 1px solid #e6ecf1;

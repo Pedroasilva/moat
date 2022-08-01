@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Form Validation</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		//= includes/loader.html
+		//= includes/sidebar.html
+		//= includes/header.html
+		<main class="content">
+			<div class="container-fluid">
+				<div class="content-header">
+					<h1>Form validation</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="dashboard-1.html">Dashboard</a></li>
+							<li class="breadcrumb-item active">Form validation</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<form class="box">
+							<div class="box-header">
+								<h3 >HTML5 validation</h3>
+							</div>
+							<div class="box-body">
+								<div class="row">
+									<div class="col-sm-4 form-group">
+										<label for="htmlFirstName">First name <sup class="text-danger">*</sup></label>
+										<input id="htmlFirstName" type="text" class="form-control" placeholder="First name" required>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="htmlLastName">Last name <sup class="text-danger">*</sup></label>
+										<input id="htmlLastName" type="text" class="form-control" placeholder="Last name" required>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="htmlEmail">Email <sup class="text-danger">*</sup></label>
+										<input id="htmlEmail" type="email" class="form-control" placeholder="Email" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 form-group">
+										<label for="validationAddress">Address</label>
+										<input id="validationAddress" type="text" class="form-control" placeholder="Address">
+										<span class="valid-feedback">Fine!</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<label for="validationCity">City</label>
+										<input id="validationCity" type="text" class="form-control" placeholder="City">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="validationState">State</label>
+										<input id="validationState" type="text" class="form-control" placeholder="State">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="validationZip">Zip</label>
+										<input id="validationZip" type="text" class="form-control" placeholder="Zip">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-label">Gender <sup class="text-danger">*</sup></div>
+									<label class="form-radio-custom">
+										<input type="radio" name="gender" value="m" required>
+										<span class="form-label">Male</span>
+									</label>
+									<label class="form-radio-custom">
+										<input type="radio" name="gender" value="w" required>
+										<span class="form-label">Female</span>
+										<span class="invalid-feedback">Сhoose your gender.</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-checkbox-custom">
+										<input type="checkbox" required>
+										<span class="form-label">I agree to the processing of personal data <sup class="text-danger">*</sup></span>
+									</label>
+								</div>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6">
+						<form class="box needs-validation" novalidate>
+							<div class="box-header">
+								<h3>JS validation</h3>
+							</div>
+							<div class="box-body">
+								<div class="row">
+									<div class="col-sm-4 form-group">
+										<label for="jsValidationFirstName">First name <sup class="text-danger">*</sup></label>
+										<input id="jsValidationFirstName" type="text" class="form-control" placeholder="First name" required>
+										<span class="valid-feedback">Fine!</span>
+										<span class="invalid-feedback">Field is required.</span>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="jsValidationLastName">Last name <sup class="text-danger">*</sup></label>
+										<input id="jsValidationLastName" type="text" class="form-control" placeholder="Last name" required>
+										<span class="valid-feedback">Fine!</span>
+										<span class="invalid-feedback">Field is required.</span>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="jsValidationEmail">Email <sup class="text-danger">*</sup></label>
+										<input id="jsValidationEmail" type="email" class="form-control" placeholder="Email" required>
+										<span class="valid-feedback">Fine!</span>
+										<span class="invalid-feedback">Field is required and must be email.</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 form-group">
+										<label for="jsValidationAddress">Address</label>
+										<input id="jsValidationAddress" type="text" class="form-control" placeholder="Address">
+										<span class="valid-feedback">Fine!</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<label for="jsValidationCity">City</label>
+										<input id="jsValidationCity" type="text" class="form-control" placeholder="City">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="jsValidationState">State</label>
+										<input id="jsValidationState" type="text" class="form-control" placeholder="State">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="jsValidationZip">Zip</label>
+										<input id="jsValidationZip" type="text" class="form-control" placeholder="Zip">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-label">Gender <sup class="text-danger">*</sup></div>
+									<label class="form-radio-custom">
+										<input type="radio" name="gender" value="m" required>
+										<span class="form-label">Male</span>
+									</label>
+									<label class="form-radio-custom">
+										<input type="radio" name="gender" value="w" required>
+										<span class="form-label">Female</span>
+										<span class="invalid-feedback">Сhoose your gender.</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-checkbox-custom">
+										<input type="checkbox" required>
+										<span class="form-label">I agree to the processing of personal data <sup class="text-danger">*</sup></span>
+									</label>
+								</div>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6">
+						<form class="box needs-validation" novalidate>
+							<div class="box-header">
+								<h3>Advanced JS validation</h3>
+							</div>
+							<div class="box-body">
+								<div class="form-group row">
+									<label for="jsValidationRequired" class="form-label col-3">Required</label>
+									<div class="col-9">
+										<input id="jsValidationRequired" required type="text" class="form-control" placeholder="required">
+										<span class="invalid-feedback">Field is required.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-9 offset-3">
+										<select required class="form-control">
+											<option value>Please, choose option</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+										<span class="invalid-feedback">Сhoose option.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-9 offset-3">
+										<label class="form-radio-custom">
+											<input type="radio" name="option" value="1" required>
+											<span class="form-label">Option 1</span>
+										</label>
+										<label class="form-radio-custom">
+											<input type="radio" name="option" value="2" required>
+											<span class="form-label">Option 2</span>
+											<span class="invalid-feedback">Сhoose option.</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-9 offset-3">
+										<label class="form-checkbox-custom">
+											<input type="checkbox" required>
+											<span class="form-label">Checkbox</span>
+											<span class="invalid-feedback">Check!</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationTypeEmail" class="form-label col-3">Email</label>
+									<div class="col-9">
+										<input id="jsValidationTypeEmail" required type="email" class="form-control" placeholder='type="email"'>
+										<span class="invalid-feedback">This value should have email address format.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationTypeUrl" class="form-label col-3">URL</label>
+									<div class="col-9">
+										<input id="jsValidationTypeUrl" required type="url" class="form-control" placeholder='type="url"'>
+										<span class="invalid-feedback">This value should have URL address format.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationTypeInteger" class="form-label col-3">Integer</label>
+									<div class="col-9">
+										<input id="jsValidationTypeInteger" required data-type="integer" type="text" class="form-control" placeholder='data-type="integer"'>
+										<span class="invalid-feedback">This value should be an integer.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationTypeFloat" class="form-label col-3">Float</label>
+									<div class="col-9">
+										<input id="jsValidationTypeFloat" required data-type="float" type="text" class="form-control" placeholder='data-type="float"'>
+										<span class="invalid-feedback">This value should be an float.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationTypeAlphanumeric" class="form-label col-3">Alphanumeric</label>
+									<div class="col-9">
+										<input id="jsValidationTypeAlphanumeric" required data-type="alphanumeric" type="text" class="form-control" placeholder='data-type="alphanumeric"'>
+										<span class="invalid-feedback">This value should be an alphanumeric value.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationTypeEqualto" class="form-label col-3">Equal to</label>
+									<div class="col-9">
+										<input required type="text" class="form-control" placeholder='data-type="/^[a-z0-9]+$/i"' value="foo" id="foo">
+										<input id="jsValidationTypeEqualto" required data-equalto="#foo" type="text" class="form-control" placeholder='data-equalto="#foo"'>	
+										<span class="invalid-feedback">This value should be the same.</span>
+									</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6">
+						<form class="box needs-validation" novalidate>
+							<div class="box-header">
+								<h3>Advanced JS validation</h3>
+							</div>
+							<div class="box-body">
+								<div class="form-group row">
+									<label for="jsValidationLengthMin" class="form-label col-3">Min length</label>
+									<div class="col-9">
+										<input id="jsValidationLengthMin" required minlength="10" type="text" class="form-control" placeholder='minlength="10"'>
+										<span class="invalid-feedback">It should have 10 characters or more.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationLengthMax" class="form-label col-3">Max length</label>
+									<div class="col-9">
+										<input id="jsValidationLengthMax" required maxlength="10" type="text" class="form-control" placeholder='maxlength="10"'>
+										<span class="invalid-feedback">It should have 10 characters maximum.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationLengthRange" class="form-label col-3">Length range</label>
+									<div class="col-9">
+										<input id="jsValidationLengthRange" required data-rangestring="5-10" type="text" class="form-control" placeholder='data-rangestring="5-10"'>
+										<span class="invalid-feedback">It should be between 5 and 10 characters long.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationMin" class="form-label col-3">Min number</label>
+									<div class="col-9">
+										<input id="jsValidationMin" required min="5" type="number" class="form-control" placeholder='min="5"'>
+										<span class="invalid-feedback">This value should be greater than or equal to 5.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationMax" class="form-label col-3">Max number</label>
+									<div class="col-9">
+										<input id="jsValidationMax" required max="10" type="number" class="form-control" placeholder='max="10"'>
+										<span class="invalid-feedback">This value should be lower than or equal to 10.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationRange" class="form-label col-3">Range</label>
+									<div class="col-9">
+										<input id="jsValidationRange" required data-range="5-10" type="text" class="form-control" placeholder='data-range="5-10"'>
+										<span class="invalid-feedback">It should be between 5 and 10.</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="jsValidationPattern" class="form-label col-3">Pattern (IP address)</label>
+									<div class="col-9">
+										<input id="jsValidationPattern" required pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" type="text" class="form-control" placeholder='pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"'>
+										<span class="invalid-feedback">This value should have IP address format. For example: 8.8.8.8</span>
+									</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

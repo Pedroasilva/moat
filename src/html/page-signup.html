@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - SignUp</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<main class="content px-10">
+			<div class="row">
+				<div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+					<a href="dashboard-1.html" class="logo justify-content-center text-primary">
+						<img src="images/logo-primary.png" alt="">
+					</a>
+					<div class="box">
+						<div class="box-header justify-content-center">
+							<h3>Signup</h3>
+						</div>
+						<form class="box-body needs-validation" novalidate>
+							<div class="form-group">
+								<label for="regFirstName">First Name</label>
+								<input id="regFirstName" type="text" required class="form-control" placeholder="Enter your first name">
+								<span class="invalid-feedback">Field is required.</span>
+							</div>
+							<div class="form-group">
+								<label for="regLastName">Last Name</label>
+								<input id="regLastName" type="text" required class="form-control" placeholder="Enter your last name">
+								<span class="invalid-feedback">Field is required.</span>
+							</div>
+							<div class="form-group">
+								<label for="regEmail">Email</label>
+								<input id="regEmail" type="email" required class="form-control" placeholder="Enter your email">
+								<span class="invalid-feedback">Field is required.</span>
+							</div>
+							<div class="form-group">
+								<label for="signupPassword">Password</label>
+								<input id="signupPassword" type="password" minlength="6" required class="form-control" placeholder="Enter your password">
+								<span class="invalid-feedback">Min length is 6 symbols.</span>
+							</div>
+							<div class="form-group">
+								<label for="signupPasswordConfirm">Confirm password</label>
+								<input id="signupPasswordConfirm" type="password" data-equalto="#signupPassword" required class="form-control" placeholder="Enter your password again">
+								<span class="invalid-feedback">Passwords do not match.</span>
+							</div>
+							<div class="form-group">
+								<label class="form-checkbox-custom">
+									<input type="checkbox">
+									<span class="form-label">Subscribe to newsletter</span>
+								</label>
+							</div>
+							<div class="form-group">
+								<button class="btn btn-block btn-primary">Signup</button>
+							</div>
+							<a class="btn btn-link btn-block" href="page-signin.html"><i class="fas fa-arrow-circle-left"></i> Go Back</a>
+						</form>
+					</div>	
+				</div>
+			</div>
+		</main>
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

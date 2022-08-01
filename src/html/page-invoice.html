@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Invoice</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		//= includes/loader.html
+		//= includes/sidebar.html
+		//= includes/header.html
+		<main class="content">
+			<div class="container-fluid">
+				<div class="content-header">
+					<h1>Invoice</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="dashboard-1.html">Dashboard</a></li>
+							<li class="breadcrumb-item active">Invoice</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="alert alert-primary">
+					<h4>Alert</h4>
+					This page has been enhanced for printing. Click the print button at the bottom of the invoice to test.
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3 >Apple, Inc. <small>Date: 15.09.2018</small></h3>
+					</div>
+					<div class="box-body">
+						<div class="row">
+							<div class="col-md-4">
+								<p>
+									<b>From:</b><br>
+									Apple Inc. <br> 
+									795 Folsom Ave, Suite 600, <br> 
+									San Francisco, CA 94107, <br> 
+									Phone: (804) 123-5432 <br> 
+									Email: example@gmail.com
+								</p>
+							</div>
+							<div class="col-md-4">
+								<p>
+									<b>To:</b><br>
+									John Doe <br> 
+									111 Awesome Ave, Suite 100, <br> Los
+									Angeles, CA 94107, <br> 
+									Phone: (804) 123-5432 <br> 
+									Email: example@gmail.com
+								</p>
+							</div>
+							<div class="col-md-4">
+								<p>
+									<b>Invoice #152315</b><br><br>
+									Order date: <b>15th September, 2018</b><br>
+									Order status: <span class="badge badge-success">Shipped</span><br>
+									Order ID: <b>#1973126</b>
+								</p>
+							</div>
+							<div class="col-12">
+								<div class="table-responsive">
+									<table class="table table-stripped mt-15 mb-25">
+										<tbody>
+											<tr>
+												<th>QTY</th>
+												<th>Description</th>
+												<th>Unit price</th>
+												<th>Total</th>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>iPhone X 256BG (GSM) Unlocked</td>
+												<td>1000.00 $</td>
+												<td>3000.00 $</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>iPad Pro 256BG</td>
+												<td>1200.00 $</td>
+												<td>1200.00 $</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>MacBook Pro 15 2015</td>
+												<td>2000.00 $</td>
+												<td>2000.00 $</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-6 mb-15">
+								<div class="table-responsive">
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><b>Subtotal:</b></td>
+												<td>6200.00 $</td>
+											</tr>
+											<tr>
+												<td><b>Tax (9.3%):</b></td>
+												<td>576.00 $</td>
+											</tr>
+											<tr>
+												<td><b>Shipping:</b></td>
+												<td>50.00 $</td>
+											</tr>
+											<tr>
+												<td><b>TOTAL:</b></td>
+												<td>6826.00 $</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h4>Payment Methods:</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ipsam, sit eum iure quibusdam minima.</p>
+								<i class="payments payments-visa"></i>
+								<i class="payments payments-mastercard"></i>
+								<i class="payments payments-maestro"></i>
+								<i class="payments payments-bitcoin"></i>
+							</div>
+						</div>
+					</div>
+					<div class="box-footer">
+						<button class="btn btn-link-danger">Remove</button>
+						<button class="btn btn-link pull-right">Export</button>
+						<a href="page-invoice-print.html" class="btn btn-primary">Print <i class="fas fa-print"></i></a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

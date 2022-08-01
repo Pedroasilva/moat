@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Dashboard 2</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.33&key=AIzaSyBOdkAKK1Q8cdMhBWMe815gRcz71Lyf2aI"></script>
+</head>
+<body>
+	<div class="wrapper">
+		//= includes/loader.html
+		//= includes/sidebar.html
+		//= includes/header.html
+		<main class="content">
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-md-9">
+						<h1 class="display-3">Hello, <b class="text-primary">John Doe</b></h1>
+						<p class="mb-20 text-lg"><i class="far fa-envelope"></i> example@gmail.com, <i class="fas fa-mobile-alt"></i> 800-123-45-67</p>
+						<p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, magni, voluptatum. Earum veritatis, fuga a!</p>
+						<button class="btn btn-lg btn-outline-primary">Open your profile</button>	
+					</div>
+					<div class="col-md-3">
+						<div class="info-box bg-primary">
+							<div class="info-box-content justify-content-center text-center">
+								<div class="info-box-text">
+									<span class="info-box-number">
+										7891
+									</span>
+									Followers
+								</div>
+							</div>
+						</div>
+						<div class="info-box bg-white mb-0">
+							<div class="info-box-content justify-content-center text-center">
+								<div class="info-box-text">
+									<span class="info-box-number">
+										3510 
+									</span>
+									Rating
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs-row">
+						<button data-tab="tabRowItem1" class="tabs-trigger active"><i class="fe fe-grid"></i> Feed</button>
+						<button data-tab="tabRowItem2" class="tabs-trigger"><i class="fe fe-user"></i> Profile</button>
+						<button data-tab="tabRowItem3" class="tabs-trigger"><i class="fe fe-settings"></i> Settings</button>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row tabs-item active" id="tabRowItem1">
+					<div class="col-lg-9">
+						<div class="box">
+							<div class="box-header">
+								<h3>Visitors</h3>
+							</div>
+							<div class="box-body">
+								<div class="row">
+									<div class="col-lg-8">
+										<div class="vector-map" id="vectorMap"></div>	
+									</div>
+									<div class="col-lg-4">
+										<div class="d-block mb-20">
+											<div class="d-flex justify-content-between">
+												<p class="mb-5">USA</p>
+												<p class="mb-5 text-secondary"><b>98</b></p>
+											</div>
+											<div class="progress progress-lg" id="barChart1"></div>
+										</div>
+
+										<div class="d-block mb-20">
+											<div class="d-flex justify-content-between">
+												<p class="mb-5">Canada</p>
+												<p class="mb-5 text-secondary"><b>76</b></p>
+											</div>
+											<div class="progress progress-lg" id="barChart2"></div>
+										</div>
+
+										<div class="d-block mb-25">
+											<div class="d-flex justify-content-between">
+												<p class="mb-5">Russia</p>
+												<p class="mb-5 text-secondary"><b>50</b></p>
+											</div>
+											<div class="progress progress-lg" id="barChart3"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3">
+						<div class="info-box bg-primary">
+							<div class="info-box-content">
+								<div class="info-box-text">
+									<span class="info-box-number">
+										7891 <small class="text-sm text-success"><i class="fas fa-chevron-up"></i>+12</small>
+									</span>
+									New users
+								</div>
+								<div class="info-box-icon text-primary">
+									<i class="i-user"></i>
+								</div>
+							</div>
+						</div>
+						<div class="info-box bg-success">
+							<div class="info-box-content">
+								<div class="info-box-text">
+									<span class="info-box-number">
+										3510 <small class="text-sm text-danger"><i class="fas fa-chevron-down"></i>-3</small>
+									</span>
+									Sales
+								</div>
+								<div class="info-box-icon text-success">
+									<i class="i-shopping-cart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="info-box bg-warning">
+							<div class="info-box-content">
+								<div class="info-box-text">
+									<span class="info-box-number">
+										19 <small class="text-sm text-secondary"><i class="fas fa-minus"></i></small>
+									</span>
+									New comments
+								</div>
+								<div class="info-box-icon text-warning">
+									<i class="i-chat-bubble"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-6">
+						<div class="box">
+							<div class="box-header">
+								<h3>Sales</h3>
+							</div>
+							<div class="box-body">
+								<canvas class="chart" height="300" id="lineChartJs"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="box">
+							<div class="box-header">
+								<h3>Analytics</h3>
+							</div>
+							<div class="box-body">
+								<canvas class="chart" height="300" id="barChartJs"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="box">
+							<div class="box-header">
+								<h3>Projects</h3>
+							</div>
+							<div class="table-responsive">
+								<table class="table">
+									<tbody>
+										<tr>
+											<th></th>
+											<th>Title</th>
+											<th>Commits</th>
+											<th>Pull Requests</th>
+											<th>Members</th>
+											<th>Progress</th>
+											<th>Deadline</th>
+										</tr>
+										<tr>
+											<td>
+												<div class="img img-square img-square-sm img-bg img-rounded">
+													AM
+												</div>
+											</td>
+											<td>AutoMotors Project</td>
+											<td>471</td>
+											<td>34</td>
+											<td>
+												<div class="avatar-stack">
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-1.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-2.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-3.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-4.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-5.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs">
+														<img src="images/plus.png" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<div class="d-flex justify-content-between mb-5">
+													<span class="text-sm"><b>Tasks</b></span>
+													<span class="text-sm text-secondary">83/100</span>
+												</div>
+												<div class="progress progress-sm">
+													<div class="progress-bar bg-success" style="width: 83%"></div>
+												</div>
+											</td>
+											<td>September 30, 2018</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="img img-square img-square-sm img-bg">
+													BF
+												</div>
+											</td>
+											<td>BestFood Project</td>
+											<td>311</td>
+											<td>15</td>
+											<td>
+												<div class="avatar-stack">
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-1.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-2.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-3.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-5.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<div class="d-flex justify-content-between mb-5">
+													<span class="text-sm"><b>Tasks</b></span>
+													<span class="text-sm text-secondary">50/100</span>
+												</div>
+												<div class="progress progress-sm">
+													<div class="progress-bar bg-primary" style="width: 50%"></div>
+												</div>
+											</td>
+											<td>September 30, 2018</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="img img-square img-square-sm img-bg">
+													TS
+												</div>
+											</td>
+											<td>TechStore Project</td>
+											<td>55</td>
+											<td>7</td>
+											<td>
+												<div class="avatar-stack">
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-4.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-5.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<div class="d-flex justify-content-between mb-5">
+													<span class="text-sm"><b>Tasks</b></span>
+													<span class="text-sm text-secondary">2/10</span>
+												</div>
+												<div class="progress progress-sm">
+													<div class="progress-bar bg-danger" style="width: 20%"></div>
+												</div>
+											</td>
+											<td>September 30, 2018</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="img img-square img-square-sm img-bg">
+													CS
+												</div>
+											</td>
+											<td>CloudStore Project</td>
+											<td>71</td>
+											<td>4</td>
+											<td>
+												<div class="avatar-stack">
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-1.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-2.jpg" alt="">
+													</a>
+													<a href="#" class="avatar avatar-xs" data-tooltip="John Doe" data-tooltip-placement="top">
+														<img src="images/avatar-3.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<div class="d-flex justify-content-between mb-5">
+													<span class="text-sm"><b>Tasks</b></span>
+													<span class="text-sm text-secondary">5/10</span>
+												</div>
+												<div class="progress progress-sm">
+													<div class="progress-bar bg-warning" style="width: 50%"></div>
+												</div>
+											</td>
+											<td>September 12, 2018</td>
+										</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tabs-item" id="tabRowItem2">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="profile">
+								<div class="profile-bg profile-bg-blur">
+									<div class="profile-bg-text">
+										<p class="text-white">John Doe</p>
+										<small class="text-white-75">Administrator</small>
+									</div>
+									<img src="images/avatar-1.jpg" alt="">
+								</div>
+								<div class="avatar avatar-md avatar-bordered">
+									<img src="images/avatar-1.jpg" alt="">
+								</div>
+								<div class="row row-bordered mb-20">
+									<div class="col-4">
+										132
+										<small class="text-secondary d-block">Articles</small>
+									</div>
+									<div class="col-4">
+										1 754
+										<small class="text-secondary d-block">Followers</small>
+									</div>
+									<div class="col-4">
+										91
+										<small class="text-secondary d-block">Following</small>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="box-header">
+									<h3>Menu</h3>
+								</div>
+								<div class="box-body">
+									<ul class="unstyled mb-0">
+										<li>
+											<a href="#">Blog</a> <span class="badge badge-success">+5</span>
+										</li>
+										<li class="d-flex justify-content-between">
+											<a href="#">My tasks</a>
+										</li>
+										<li class="d-flex justify-content-between">
+											<a href="#">News</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="box">
+								<div class="box-header">
+									<h3>Contacts</h3>
+								</div>
+								<div class="box-body">
+									<div class="user-panel">
+										<div class="user-panel-image">
+											<div class="avatar avatar-sm">
+												<img src="images/avatar-2.jpg" alt="">
+												<i class="fas fa-circle text-success"></i>
+											</div>
+										</div>
+										<div class="user-panel-info">
+											<p>Sam Lee</p>
+											<small class="text-black-50">iOS Developer</small>
+										</div>
+										<div class="user-panel-actions">
+											<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										</div>
+									</div>
+									<div class="user-panel">
+										<div class="user-panel-image">
+											<div class="avatar avatar-sm">
+												<img src="images/avatar-3.jpg" alt="">
+											</div>
+										</div>
+										<div class="user-panel-info">
+											<p>Alex White</p>
+											<small class="text-black-50">Frontend Developer</small>
+										</div>
+										<div class="user-panel-actions">
+											<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										</div>
+									</div>
+									<div class="user-panel">
+										<div class="user-panel-image">
+											<div class="avatar avatar-sm">
+												<img src="images/avatar-4.jpg" alt="">
+												<i class="fas fa-circle text-success"></i>
+											</div>
+										</div>
+										<div class="user-panel-info">
+											<p>Jessica Evans</p>
+											<small class="text-black-50">iOS Developer</small>
+										</div>
+										<div class="user-panel-actions">
+											<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										</div>
+									</div>
+									<div class="user-panel">
+										<div class="user-panel-image">
+											<div class="avatar avatar-sm">
+												<img src="images/avatar-6.jpg" alt="">
+											</div>
+										</div>
+										<div class="user-panel-info">
+											<p>Jacob Brown</p>
+											<small class="text-black-50">Backend Developer</small>
+										</div>
+										<div class="user-panel-actions">
+											<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="box-footer">
+									<a href="#" class="text-secondary text-sm d-block">Show more contacts <i class="fas fa-chevron-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8">
+							<div class="box">
+								<div class="box-body">
+									<div class="user-panel">
+										<div class="user-panel-image">
+											<a href="#" class="avatar avatar-sm">
+												<i class="fas fa-circle text-success"></i>
+												<img src="images/avatar-1.jpg" alt="">
+											</a>
+										</div>
+										<div class="user-panel-info">
+											<a href="#">John Doe</a>
+											<small class="text-secondary">3 hours ago</small>
+										</div>
+										<div class="user-panel-actions">
+											<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										</div>
+									</div>
+									<hr>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur officia laboriosam, blanditiis obcaecati hic veniam itaque modi! Repudiandae consectetur eligendi quasi cupiditate? Necessitatibus aspernatur, sapiente illum, ipsa sequi consectetur placeat?</p>
+									<hr>
+									<div class="d-flex">
+										<button class="btn btn-link-secondary"><i class="far fa-heart"></i> 14</button>
+										<button class="btn btn-link-secondary"><i class="far fa-comment"></i> 5</button>
+										<span class="btn btn-link-secondary pull-right"><i class="fas fa-eye"></i> 378</span>
+									</div>
+								</div>
+								<div class="box-footer">
+									<div class="comments bg-white">
+										<div class="user-panel align-items-start">
+											<div class="user-panel-image">
+												<a href="#" class="avatar avatar-sm">
+													<img src="images/avatar-2.jpg" alt="">
+												</a>
+											</div>
+											<div class="user-panel-info">
+												<a href="#">Sam Lee</a>
+												<p class="text-secondary">Good thinking!</p>
+											</div>
+											<div class="user-panel-actions text-black-25">
+												<small class="text-secondary">1 hour ago</small>
+												<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+											</div>
+										</div>
+										<div class="user-panel align-items-start">
+											<div class="user-panel-image">
+												<a href="#" class="avatar avatar-sm">
+													<img src="images/avatar-3.jpg" alt="">
+												</a>
+											</div>
+											<div class="user-panel-info">
+												<a href="#">Alex White</a>
+												<p class="text-secondary">Very intresting...</p>
+											</div>
+											<div class="user-panel-actions text-black-25">
+												<small class="text-secondary">47 minutes ago</small>
+												<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+											</div>
+										</div>
+										<div class="user-panel align-items-start">
+											<div class="user-panel-image">
+												<a href="#" class="avatar avatar-sm">
+													<img src="images/avatar-4.jpg" alt="">
+												</a>
+											</div>
+											<div class="user-panel-info">
+												<a href="#">Jessica Evans</a>
+												<p class="text-secondary">It's seems like a great idea!</p>
+											</div>
+											<div class="user-panel-actions text-black-25">
+												<small class="text-secondary">1 minute ago</small>
+												<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+											</div>
+										</div>
+										<button class="btn btn-primary btn-block mt-15">Load more comments</button>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="box-body">
+									<div class="user-panel">
+										<div class="user-panel-image">
+											<a href="#" class="avatar avatar-sm">
+												<i class="fas fa-circle text-success"></i>
+												<img src="images/avatar-3.jpg" alt="">
+											</a>
+										</div>
+										<div class="user-panel-info">
+											<a href="#">Alex White</a>
+											<small class="text-secondary">2 days ago</small>
+										</div>
+										<div class="user-panel-actions">
+											<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										</div>
+									</div>
+									<hr>
+									<p>Hey, look at my photos! Great, isn't it?</p>
+									<div class="d-flex flex-wrap">
+										<div class="img-square img-rounded">
+											<img src="images/stock-1.jpg" alt="">
+										</div>
+										<div class="img-square img-rounded">
+											<img src="images/stock-2.jpg" alt="">
+										</div>
+										<div class="img-square img-rounded">
+											<img src="images/stock-3.jpg" alt="">
+										</div>
+										<div class="img-square img-rounded">
+											<img src="images/stock-4.jpg" alt="">
+										</div>
+										<div class="img-square img-rounded">
+											<img src="images/stock-5.jpg" alt="">
+										</div>
+									</div>
+									<hr>
+									<div class="d-flex">
+										<button class="btn btn-link-secondary"><i class="far fa-heart"></i> 14</button>
+										<button class="btn btn-link-secondary"><i class="far fa-comment"></i> 5</button>
+										<span class="btn btn-link-secondary pull-right"><i class="fas fa-eye"></i> 78</span>
+									</div>
+								</div>
+								<div class="box-footer">
+									<div class="comments bg-white">
+										<div class="user-panel align-items-start">
+											<div class="user-panel-image">
+												<a href="#" class="avatar avatar-sm">
+													<img src="images/avatar-1.jpg" alt="">
+												</a>
+											</div>
+											<div class="user-panel-info">
+												<a href="#">John Doe</a>
+												<p class="text-secondary">Yeah, nice photos! Well done.</p>
+											</div>
+											<div class="user-panel-actions text-black-25">
+												<small class="text-secondary">2 days ago</small>
+												<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="btn btn-link btn-block mb-20">Show more</button>
+							<button class="btn btn-link btn-block mb-20"><i class="i-spinner loading"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="tabs-item" id="tabRowItem3">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="box">
+								<div class="box-header">
+									<h3>Profile</h3>
+								</div>
+								<div class="box-body">
+									<div class="form-group row align-items-center">
+										<div class="form-label col-3">
+											<div class="img img-square img-square-sm img-rounded">
+												<img src="images/avatar-1.jpg" alt="">
+											</div>
+										</div>
+										<label class="col-9">
+											<input type="file" class="form-control">
+										</label>
+									</div>
+									<div class="form-group row">
+										<div class="form-label col-3">Phone</div>
+										<label class="col-9">
+											<input type="tel" data-mask="+{7}(000)000-00-00" class="form-control" placeholder="+7(900)000-00-00" value="79001234567">
+										</label>
+									</div>
+									<div class="form-group row">
+										<div class="form-label col-3">Email</div>
+										<label class="col-9">
+											<input type="email" class="form-control" value="johndoe@gmail.com">
+										</label>
+									</div>
+									<div class="form-group row">
+										<div class="form-label col-3">Twitter</div>
+										<label class="col-9">
+											<input type="url" class="form-control" value="https://twitter.com/">
+										</label>
+									</div>
+								</div>
+								<div class="box-footer">
+									<button class="btn btn-primary">Save</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="box">
+								<div class="box-header">
+									<h3>Notifications</h3>
+								</div>
+								<div class="box-body">
+									<div class="form-group">
+										<label class="form-checkbox-custom">
+											<input type="checkbox" checked>
+											<span class="form-label">New messages</span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="form-checkbox-custom">
+											<input type="checkbox">
+											<span class="form-label">New events</span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="form-checkbox-custom">
+											<input type="checkbox">
+											<span class="form-label">New tasks</span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="form-checkbox-custom">
+											<input type="checkbox">
+											<span class="form-label">New posts</span>
+										</label>
+									</div>
+								</div>
+								<div class="box-footer">
+									<button class="btn btn-primary">Save</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+		//= includes/footer.html
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

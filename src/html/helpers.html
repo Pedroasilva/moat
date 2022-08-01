@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Helpers</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		//= includes/loader.html
+		//= includes/sidebar.html
+		//= includes/header.html
+		<main class="content">
+			<div class="container-fluid">
+				<div class="content-header">
+					<h1>Helpers</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="dashboard-1.html">Dashboard</a></li>
+							<li class="breadcrumb-item active">Helpers</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="box">
+							<div class="box-header">
+								<h3>CSS Box Model</h3>
+							</div>
+							<div class="box-body">
+								<h3>Padding</h3>
+								<p>Padding top: <code>.pt-{value}</code></p>
+								<p>Padding bottom: <code>.pb-{value}</code></p>
+								<p>Padding left: <code>.pl-{value}</code></p>
+								<p>Padding right: <code>.pr-{value}</code></p>
+								<p>Padding vertical: <code>.py-{value}</code></p>
+								<p>Padding horizontal: <code>.px-{value}</code></p>
+								<h3>Margin</h3>
+								<p>Margin top: <code>.mt-{value}</code></p>
+								<p>Margin bottom: <code>.mb-{value}</code></p>
+								<p>Margin left: <code>.ml-{value}</code></p>
+								<p>Margin right: <code>.mr-{value}</code></p>
+								<p>Margin vertical: <code>.my-{value}</code></p>
+								<p>Margin horizontal: <code>.mx-{value}</code></p>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-6">
+						<div class="box">
+							<div class="box-header">
+								<h3>Colors</h3>
+							</div>
+							<div class="box-body">
+								<h3>Text color:</h3>
+								<p>Add <code>.text-{value}</code> class to change text color. Available colors:</p>
+								<ul>
+									<li class="text-primary">primary</li>
+									<li class="text-secondary">secondary</li>
+									<li class="text-success">success</li>
+									<li class="text-warning">warning</li>
+									<li class="text-danger">danger</li>
+									<li class="text-info">info</li>
+									<li class="text-light">light</li>
+									<li class="text-dark">dark</li>
+									<li class="text-black-75">black 75</li>
+									<li class="text-black-50">black 50</li>
+									<li class="text-black-25">black 25</li>
+									<li class="bg-dark text-white">white</li>
+									<li class="bg-dark text-white-75">white 75</li>
+									<li class="bg-dark text-white-50">white 50</li>
+									<li class="bg-dark text-white-25">white 25</li>
+								</ul>
+								<h3>Background colors:</h3>
+								<p>Add <code>.bg-{value}</code> class to change background color. Available colors:</p>
+								<ul>
+									<li class="bg-primary">primary</li>
+									<li class="bg-secondary">secondary</li>
+									<li class="bg-success">success</li>
+									<li class="bg-warning">warning</li>
+									<li class="bg-danger">danger</li>
+									<li class="bg-info">info</li>
+									<li class="bg-light">light</li>
+									<li class="bg-light-blue">light-blue</li>
+									<li class="bg-dark text-white">dark</li>
+									<li class="bg-white">white</li>
+								</ul>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-6">
+						<div class="box">
+							<div class="box-header">
+								<h3>Avatar with status</h3>
+							</div>
+							<div class="box-body">
+								<div class="avatar avatar-lg">
+									<img src="images/avatar-1.jpg" alt="">
+									<i class="fas fa-circle text-success"></i>
+								</div>
+								<div class="avatar">
+									<img src="images/avatar-2.jpg" alt="">
+									<i class="fas fa-circle text-danger"></i>
+								</div>
+								<div class="avatar avatar-sm">
+									<img src="images/avatar-3.jpg" alt="">
+									<i class="fas fa-circle text-warning"></i>
+								</div>
+								<div class="avatar avatar-xs">
+									<img src="images/avatar-4.jpg" alt="">
+									<i class="fas fa-circle text-primary"></i>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3>Avatar stack</h3>
+					</div>
+					<div class="box-body">
+						<div class="avatar-stack">
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-1.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-2.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-3.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-4.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-5.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-6.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-7.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-header">
+						<h3>Avatar stack with zoom</h3>
+					</div>
+					<div class="box-body">
+						<div class="avatar-stack avatar-stack-zoom">
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-1.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-2.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-3.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-4.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-5.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-6.jpg" alt="">
+							</a>
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-7.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		//= includes/footer.html
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

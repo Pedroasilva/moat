@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Chat</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		//= includes/loader.html
+		//= includes/sidebar.html
+		//= includes/header.html
+		<main class="content">
+			<div class="container-fluid">
+				<div class="box box-chat">
+					<div class="chat-column">
+						<div class="chat-search chat-toggle">
+							<i class="fas fa-search"></i>
+							<input type="text" placeholder="Search">
+							<button class="btn btn-link"><i class="fas fa-plus"></i></button>
+						</div>
+						<div class="chat-list chat-toggle">
+							<div class="user-panel">
+								<div class="user-panel-image">
+									<div class="avatar avatar-sm">
+										<img src="images/avatar-2.jpg" alt="">
+										<i class="fas fa-circle text-success"></i>
+									</div>
+								</div>
+								<div class="user-panel-info">
+									<p>Sam Lee</p>
+									<small class="text-black-50"><b>You:</b> okay!</small>
+								</div>
+								<div class="user-panel-actions">
+										<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+									</div>
+							</div>
+							<div class="user-panel active">
+								<div class="user-panel-image">
+									<div class="avatar avatar-sm">
+										<img src="images/avatar-3.jpg" alt="">
+									</div>
+								</div>
+								<div class="user-panel-info">
+									<p>Alex White</p>
+									<small class="text-black-50">Let's go!</small>
+								</div>
+								<div class="user-panel-actions">
+										<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+									</div>
+							</div>
+							<div class="user-panel bg-light-blue">
+								<div class="user-panel-image">
+									<div class="avatar avatar-sm">
+										<img src="images/avatar-4.jpg" alt="">
+										<i class="fas fa-circle text-success"></i>
+									</div>
+								</div>
+								<div class="user-panel-info">
+									<p>Jessica Evans <span class="badge badge-success">+5</span></p>
+									<small class="text-black-50"> I'm going to office.</small>
+								</div>
+								<div class="user-panel-actions">
+										<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+									</div>
+							</div>
+							<div class="user-panel">
+								<div class="user-panel-image">
+									<div class="avatar avatar-sm">
+										<img src="images/avatar-5.jpg" alt="">
+									</div>
+								</div>
+								<div class="user-panel-info">
+									<p>Lily Wilson</p>
+									<small class="text-black-50"><b>You:</b> Where is Alex?</small>
+								</div>
+								<div class="user-panel-actions">
+									<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+								</div>
+							</div>
+							<div class="user-panel">
+								<div class="user-panel-image">
+									<div class="avatar avatar-sm">
+										<img src="images/avatar-6.jpg" alt="">
+									</div>
+								</div>
+								<div class="user-panel-info">
+									<p>Jacob Brown</p>
+									<small class="text-black-50">Awesome!</small>
+								</div>
+								<div class="user-panel-actions">
+									<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+								</div>
+							</div>
+							<div class="user-panel">
+								<div class="user-panel-image">
+									<div class="avatar avatar-sm">
+										<img src="images/avatar-7.jpg" alt="">
+									</div>
+								</div>
+								<div class="user-panel-info">
+									<p>Harry Taylor</p>
+									<small class="text-black-50"><b>You:</b> keep going</small>
+								</div>
+								<div class="user-panel-actions">
+									<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+								</div>
+							</div>
+							<div class="user-panel">
+								<div class="user-panel-image">
+									<div class="avatar avatar-sm">
+										<img src="images/avatar-8.jpg" alt="">
+									</div>
+								</div>
+								<div class="user-panel-info">
+									<p>Sarah Miller</p>
+									<small class="text-black-50">I got it.</small>
+								</div>
+								<div class="user-panel-actions">
+									<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+								</div>
+							</div>
+							<div class="user-panel">
+								<div class="user-panel-image">
+									<div class="avatar avatar-sm">
+										<img src="images/avatar-9.jpg" alt="">
+									</div>
+								</div>
+								<div class="user-panel-info">
+									<p>Joanne Davies</p>
+									<small class="text-black-50">Great!</small>
+								</div>
+								<div class="user-panel-actions">
+									<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-header">
+							<a href="#" class="avatar avatar-sm">
+								<img src="images/avatar-3.jpg" alt="">
+							</a>
+							<h4><a href="#">Alex White</a> <small class="text-secondary">was online today at 11:43</small></h4>
+							<div class="d-flex pull-right text-primary">
+								<a href="#" class="icon"><i class="fas fa-ellipsis-h"></i></a>
+							</div>
+						</div>
+						<div class="chat-messages">
+							<div class="message-event">
+								John Doe connected to chat at 09:12
+							</div>
+
+							<div class="message">
+								<div class="avatar avatar-sm">
+									<img src="images/avatar-3.jpg" alt="">
+								</div>
+								<div class="message-content">
+									<div class="message-bubble">
+										<p>Hello, John!</p>
+									</div>
+									<small class="text-secondary text-sm">Today, 10:31</small>
+								</div>
+								<div class="message-actions">
+									<button><i class="far fa-trash-alt"></i></button>
+									<button><i class="far fa-flag"></i></button>
+								</div>
+							</div>
+
+							<div class="message">
+								<div class="avatar avatar-sm">
+									<img src="images/avatar-3.jpg" alt="">
+								</div>
+								<div class="message-content">
+									<div class="message-bubble">
+										<p>What about our project?</p>
+									</div>
+									<small class="text-secondary text-sm">Today, 10:32</small>
+								</div>
+								<div class="message-actions">
+									<button><i class="far fa-trash-alt"></i></button>
+									<button><i class="far fa-flag"></i></button>
+								</div>
+							</div>
+
+							<div class="message message-self">
+								<div class="message-content">
+									<div class="message-bubble">
+										<p>Hello!</p>
+									</div>
+									<small class="text-secondary text-sm">Today, 10:35</small>
+								</div>
+								<div class="message-actions">
+									<button><i class="far fa-trash-alt"></i></button>
+								</div>
+							</div>
+							<div class="message message-self">
+								<div class="message-content">
+									<div class="message-bubble">
+										<p>The project finally complete! Let's go to meetup!</p>
+									</div>
+									<small class="text-secondary text-sm">Today, 10:35</small>
+								</div>
+								<div class="message-actions">
+									<button><i class="far fa-trash-alt"></i></button>
+								</div>
+							</div>
+							<div class="message">
+								<div class="avatar avatar-sm">
+									<img src="images/avatar-3.jpg" alt="">
+								</div>
+								<div class="message-content">
+									<div class="message-bubble">
+										<p>Let's go!</p>
+									</div>
+									<small class="text-secondary text-sm">Today, 10:36</small>
+								</div>
+								<div class="message-actions">
+									<button><i class="far fa-trash-alt"></i></button>
+									<button><i class="far fa-flag"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="chat-footer">
+							<div class="input-group">
+								<input id="inputGroupEmailButton2" type="text" class="form-control" placeholder="This is input with button">
+								<button class="btn btn-primary">Send</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

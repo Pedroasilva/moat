@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Form Validation</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		//= includes/loader.html
+		//= includes/sidebar.html
+		//= includes/header.html
+		<main class="content">
+			<div class="container-fluid">
+				<div class="content-header">
+					<h1>Form wizzard</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="dashboard-1.html">Dashboard</a></li>
+							<li class="breadcrumb-item active">Form wizzard</li>
+						</ol>
+					</nav>
+				</div>
+
+				<form class="box needs-validation">
+					<div class="tabs-box">
+						<div data-tab-ref="exampleTab1" class="tabs-trigger active">Step 1</div>
+						<div data-tab-ref="exampleTab2" class="tabs-trigger">Step 2</div>
+						<div data-tab-ref="exampleTab3" class="tabs-trigger">Step 3</div>
+					</div>
+					<div class="tabs-item active" id="exampleTab1">
+						<div class="box-body">
+							<div class="form-group row">
+								<div class="col-6">
+									<label for="validationFirstName">First name <sup class="text-danger">*</sup></label>
+									<input id="validationFirstName" type="text" class="form-control" placeholder="First name" required>
+									<span class="valid-feedback">Fine!</span>
+									<span class="invalid-feedback">Field is required.</span>
+								</div>
+								<div class="col-6">
+									<label for="validationLastName">Last name <sup class="text-danger">*</sup></label>
+									<input id="validationLastName" type="text" class="form-control" placeholder="Last name" required>
+									<span class="valid-feedback">Fine!</span>
+									<span class="invalid-feedback">Field is required.</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="validationEmail">Email <sup class="text-danger">*</sup></label>
+								<input id="validationEmail" type="email" class="form-control" placeholder="Email" required>
+								<span class="valid-feedback">Fine!</span>
+								<span class="invalid-feedback">Field is required and must be email.</span>
+							</div>
+						</div>
+						<div class="box-footer">
+							<button type="button" data-tab="exampleTab2" class="btn btn-primary pull-right">Next</button>
+						</div>
+					</div>
+					<div class="tabs-item" id="exampleTab2">
+						<div class="box-body">
+							<div class="form-group row">
+								<div class="col-12">
+									<label for="validationAddress">Address</label>
+									<input id="validationAddress" type="text" class="form-control" placeholder="Address">
+									<span class="valid-feedback">Fine!</span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-6">
+									<label for="validationCity">City</label>
+									<input id="validationCity" type="text" class="form-control" placeholder="City">
+								</div>
+								<div class="col-3">
+									<label for="validationState">State</label>
+									<input id="validationState" type="text" class="form-control" placeholder="State">
+								</div>
+								<div class="col-3">
+									<label for="validationZip">Zip</label>
+									<input id="validationZip" type="text" class="form-control" placeholder="Zip">
+								</div>
+							</div>
+						</div>
+						<div class="box-footer">
+							<button type="button" data-tab="exampleTab1" class="btn btn-link">Previous</button>
+							<button type="button" data-tab="exampleTab3" class="btn btn-primary pull-right">Next</button>
+						</div>
+					</div>
+					<div class="tabs-item" id="exampleTab3">
+						<div class="box-body">
+							<div class="form-group">
+								<div class="form-label">Gender <sup class="text-danger">*</sup></div>
+								<label class="form-radio-custom">
+									<input type="radio" name="gender" value="m" required>
+									<span class="form-label">Male</span>
+								</label>
+								<label class="form-radio-custom">
+									<input type="radio" name="gender" value="w" required>
+									<span class="form-label">Female</span>
+									<span class="invalid-feedback">Сhoose your gender.</span>
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="form-checkbox-custom">
+									<input type="checkbox" required>
+									<span class="form-label">I agree to the processing of personal data <sup class="text-danger">*</sup></span>
+								</label>
+							</div>
+						</div>
+						<div class="box-footer">
+							<button type="button" data-tab="exampleTab2" class="btn btn-link">Previous</button>
+							<button type="submit" class="btn btn-primary pull-right">Submit</button>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+		</main>
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

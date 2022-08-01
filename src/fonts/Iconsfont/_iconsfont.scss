@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains iconsfont styles.
+// -----------------------------------------------------------------------------
+
+@font-face {
+ 	font-family: '<%= fontName %>';
+ 	src: url('../fonts/<%= fontName %>/<%= fontName %>.eot?<%= timestamp %>');
+	src: url('../fonts/<%= fontName %>/<%= fontName %>.eot?#iefix-<%= timestamp %>') format('embedded-opentype'),
+ 		url('../fonts/<%= fontName %>/<%= fontName %>.woff2?<%= timestamp %>') format('woff2'),
+  		url('../fonts/<%= fontName %>/<%= fontName %>.woff?<%= timestamp %>') format('woff'),
+  		url('../fonts/<%= fontName %>/<%= fontName %>.ttf?<%= timestamp %>') format('truetype');
+ 	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='<%= className %>-'],
+[class*=' <%= className %>-'] {
+	position: relative;
+	top: -1px;
+	display: inline-block;
+	vertical-align: bottom;
+	font-family: '<%= fontName %>';
+	font-weight: normal;
+	font-style: normal;
+	font-size: inherit;
+	text-decoration: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	speak: none;
+}
+
+<% _.each(glyphs, function(icon){ %>
+.<%= className %>-<%= icon.name %>:before {
+	content: '\<%= icon.unicode[0].charCodeAt(0).toString(16) %>';
+}
+<% }) %>
